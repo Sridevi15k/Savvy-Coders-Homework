@@ -9,14 +9,14 @@ function greetCustomer () {
 }
 
 function listToppings(pizzaToppings) {
-  let myToppings = "";
+  let myToppings;
   for (var i = 0; i < pizzaToppings.length; i++) {
-    if (i == pizzaToppings.length - 1) {
+    if (i == 0) {
+      myToppings = pizzaToppings[i];
+    } else if (i == pizzaToppings.length - 1) {
       myToppings = myToppings + " and " + pizzaToppings[i];
-    } else if (i == 0) {
-      myToppings = myToppings + "  " + pizzaToppings[i];
     } else {
-      myToppings = myToppings + " , " + pizzaToppings[i];
+      myToppings = myToppings + ", " + pizzaToppings[i];
     }
   }
   return `${myToppings}`;
@@ -32,18 +32,18 @@ function getPizzaOrder(orderSize, orderCrust, ...orderToppings) {
       }
    }
 
-  return `One ${orderSize} ${orderCrust} crust pizza with${listToppings(orderToppings)} coming up!`;
+  return `One ${orderSize} ${orderCrust} crust pizza with ${listToppings(orderToppings)} coming up!`;
 }
 
 function preparePizza(pizza) {
- return `Cooking pizza! Size: ${pizza[0]}, Crust: ${pizza[1]}, Toppings:${listToppings(pizza[2])}.`;
+ return `Cooking pizza! Size: ${pizza[0]}, Crust: ${pizza[1]}, Toppings: ${listToppings(pizza[2])}.`;
   }
 
 function servePizza(pizza) {
   if (pizza.toppings.length == 0) {
 return `One cheese pizza coming up!`
   }
-    return `Order up! Here's your ${pizza.size} ${pizza.crust} crust pizza with${listToppings(pizza.toppings)}. Enjoy!`
+    return `Order up! Here's your ${pizza.size} ${pizza.crust} crust pizza with ${listToppings(pizza.toppings)}. Enjoy!`
 }
 
 
