@@ -1,0 +1,89 @@
+
+.background{
+  background-color: powderblue;
+  padding-left: 2px;
+  padding-right:
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.heading1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: darkblue;
+  background-color: dodgerblue;
+
+}
+.heading2 {
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  color: darkcyan;
+  font-size: 14;
+
+}
+.paragraph{
+  text-align: left;
+  color: darkblue;
+  font-weight: bold;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+
+}
+ .heading3 {
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  color: darkred;
+  font-size: 12;
+}
+
+#list1.sub-list1 {
+  color: darkblue;
+  text-align: left;
+  margin-left: 50px;
+  padding: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#list2.sub-list2 {
+  list-style-position: outside;
+  color: darkblue;
+  text-align: left;
+  margin-left: 50px;
+  padding: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+a:hover{
+  background-color: white;
+}
+.link{
+  border-bottom: black;
+  color: firebrick;
+  font-family: 'Times New Roman', Times, serif
+  text-align: left;
+
+}
+.flex{
+  font-weight: bold;
+  font-family: sans-serif;
+  color: firebrick;
+}
+.float-image {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  border: saddlebrown;
+  padding: 2px;
+  border-style: double;
+  padding-block: 20px;
+  border-color: brown;
+}
+ol li::first-letter {
+  font-size: 120%;
+
+}
+
