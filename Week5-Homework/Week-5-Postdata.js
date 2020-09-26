@@ -618,4 +618,14 @@ const titleBody = []
   )
 console.log(titleBody);
 
+const titleBod = []
+user5post.forEach (user => {
+    let title = user.title;
+    let body = user.body;
+    titleBod.push([title, body]);
+  }
+  )
+console.log(titleBod);
+
+
 
